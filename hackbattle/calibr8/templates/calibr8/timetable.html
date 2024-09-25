@@ -13,7 +13,7 @@
             <div class="container mx-auto px-12 md:px-12">
                 <div class="py-2 flex items-center flex-wrap justify-between lg:flex-nowrap">
                     <div class="w-full flex items-center justify-between lg:w-auto">
-                        <a href="">
+                        <a href="{% url 'index' %}">
                             <span class="text-3xl font-semibold">Calibr8</span>
                         </a>
                         <button class="p-2 lg:hidden">
@@ -24,9 +24,11 @@
                     </div>
                     <div class="pl-12 ml-10 hidden lg:block lg:py-0">
                         <ul class=" text-gray-600 lg:flex lg:gap-12 lg:space-y-0 ">
-                          
                             <li>
-                                <a href="index.html" class="  mt-2 -top-[1px] bg-[#3772FF] px-10 py-2 rounded-full text-white">Logout</a>
+                                <a href="{% url 'preferences' %}">Preferences</a>
+                            </li>
+                            <li>
+                                <a href="{% url 'logout' %}" class="mt-2 -top-[1px] bg-[#3772FF] px-10 py-2 rounded-full text-white">Logout</a>
                             </li>
                         </ul>
                     </div>
